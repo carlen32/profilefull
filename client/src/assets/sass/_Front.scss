@@ -1,0 +1,28 @@
+
+.social-icons{
+    @include transition-ease;
+    color: $light;
+         &:hover{
+            @include transition-ease;
+        color: $primary;
+    }
+    
+   
+}
+
+.logo{
+    font-family:  Edwardian Script ITC;
+    font-size: 40px;
+   
+} 
+.logo-o{
+        position: relative;
+    font-size: 40px;
+       a{
+           position: absolute;
+          font-size: 10px;
+          right: 11px;
+          top:22px;
+       }
+       
+    }

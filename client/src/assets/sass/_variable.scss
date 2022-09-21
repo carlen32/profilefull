@@ -1,0 +1,80 @@
+$primary: #3387bf;
+$dark: #023758;
+$secondary: #555;
+$info: #84beee;
+$light-bg: #ccd9e7;
+$success: red;
+$warning: green;
+$danger: rgb(172, 16, 16);
+$light: #f2f6fb;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "light-bg": $light-bg
+);
+@mixin transition-ease {
+  transition: all 0.7s ease-in-out;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+CSS properties to have word wrap on a pre tag element pre {
+  white-space: pre-wrap;
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}

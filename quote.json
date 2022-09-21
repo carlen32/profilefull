@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "author": "Oscar Wilde",
+        "quote": " Be yourself; everyone else is already taken."
+    },
+    {
+        "id": 2,
+        "author": "Albert Einstein",
+        "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
+    },
+    {
+        "id": 3,
+        "author": "So many books, so little time.",
+        "quote": "Fank Zappa"
+    },
+    {
+        "id": 4,
+        "author": "Dr. Seuss",
+        "quote": "You know you're in love when you can't fall asleep because reality is finally better than your dreams."
+    },
+    {
+        "id": 5,
+        "author": "Mae West",
+        "quote": " You only live once, but if you do it right, once is enough."
+    },
+    {
+        "id": 6,
+        "author": "Mahatma Gandhi",
+        "quote": " Be the change that you wish to see in the world."
+    },
+    {
+        "id": 7,
+        "author": "Mark Twain",
+        "quote": " If you tell the truth, you don't have to remember anything."
+    },
+    {
+        "id": 8,
+        "author": "Friedrich Nietzsche",
+        "quote": " Without music, life would be a mistake."
+    },
+    {
+        "id": 9,
+        "author": "C.S. Lewis",
+        "quote": " Some day you will be old enough to start reading fairy tales again."
+    },
+    {
+        "id": 10,
+        "author": "Lewis Carroll",
+        "quote": "It’s no use going back to yesterday, because I was a different person then."
+    },
+    {
+        "id": 11,
+        "author": "Stephen King",
+        "quote": "Books are a uniquely portable magic."
+    },
+    {
+        "id": 12,
+        "author": "Audrey Hepburn",
+        "quote": " Nothing is impossible, the word itself says 'I'm possible'!"
+    },
+    {
+        "id": 13,
+        "author": "Joe Dirt",
+        "quote": "Life’s a garden. Dig it"
+    },
+    {
+        "id": 14,
+        "author": "Alfred",
+        "quote": "Why do we fall? So we can learn to pick ourselves back up"
+    },
+    {
+        "id": 15,
+        "author": "Marines",
+        "quote": "Everyone wants to go to heaven but nobody wants to die "
+    },
+    {
+        "id": 16,
+        "author": "Ricky Bobby",
+        "quote": "If your not first your last "
+    }
+]
+    

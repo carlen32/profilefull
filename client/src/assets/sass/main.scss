@@ -1,0 +1,30 @@
+@import './variable';
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../node_modules/fontawesome/scss/fontawesome.scss";
+@import './Front';
+@import './media';
+@import './modals/regModal';
+@import './designer';
+
+.border-radius {
+    border-radius: 1%;
+}
+
+.overflow-scroll{
+    overflow-y: scroll;
+}
+
+.font-family {
+font-family:  Edwardian Script ITC;
+}
+
+.text-shadow {
+    text-shadow: 3px 2px 1px #ffffff;
+  }
+
+
+  .list-styled{
+     list-style: inside;
+     font-size: 1rem;
+     font-family:  MT Script Capitals;
+  }
