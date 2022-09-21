@@ -1,4 +1,4 @@
-import "./assets/sass/bootstrap.min.css";
+
 import "./assets/sass/main.css";
 import React, { useEffect } from "react";
 import HomePage from "./components/Home/HomePage";
