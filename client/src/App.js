@@ -44,3 +44,11 @@ const App = () => {
   );
 };
 export default App
+
+
+  //  ******** GIT COMMANDS ************
+// git branch -M main (press enter)
+// git add . (press enter)
+// git commit -m "first commit" (press enter)
+// git push origin main (press enter)
+

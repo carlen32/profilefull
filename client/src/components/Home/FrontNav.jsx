@@ -31,7 +31,7 @@ const FrontNav = (props) => {
                 <i className="fa fa-lock text-white" aria-hidden="true"></i>
               </a>
             </span>
-            nly<span className="text-info font-family  font logo">Fans</span>
+            nly<span className="text-info font-family  font logo">Legs</span>
           </h3>
         </div>
         <div className="col-12 col-sm-6 row d-flex align-items-center "> 

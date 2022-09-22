@@ -8,6 +8,7 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const routes = require('./routes');
 
+
 connectDB();
 
 const MONGODB_URI = process.env.MONGODB_URI
@@ -22,6 +23,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cors());
 
 app.use(routes);
+
 
 
 app.listen(PORT, () => {
