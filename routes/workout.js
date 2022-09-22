@@ -1,14 +1,9 @@
 const router = require('express').Router();
-const imgVidController = require('../controllers/img&videos')
+const workoutController = require('../controllers/workoutController')
 
-// ********** get photos to buy  ***************
-router.route('/photos').get(imgVidController.getImgs)
+// ********** post workout ***************
+router.route('/').post(workoutController.postWorkOut)
 
-// ********** Buy the photo  ***************
-router.route('/buyImg').post(imgVidController.buyImg)
-
-// ********** get photos to buy  ***************
-router.route('/bought').get(imgVidController.getAllBoughtImgs)
 
 
 module.exports = router;

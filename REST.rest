@@ -1,8 +1,8 @@
-POST http://localhost:4000/user/register
+POST http://localhost:4000/workout
 content-type: application/json
 
 {
-    "name": "David Carlen",
-    "email": "david32@david",
-    "password": "123456"
+    "title": "bench",
+    "reps": 4,
+    "load": 225
 }
