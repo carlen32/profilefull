@@ -5,6 +5,7 @@
 @import './media';
 @import './modals/regModal';
 @import './designer';
+@import './swiper';
 
 .border-radius {
     border-radius: 1%;
@@ -14,9 +15,9 @@
     overflow-y: scroll;
 }
 
-// .font-family {
-// font-family:  Edwardian Script ITC;
-// }
+.font-family {
+font-family:  Edwardian Script ITC;
+}
 
 .text-shadow {
     text-shadow: 3px 2px 1px #ffffff;
@@ -26,5 +27,5 @@
   .list-styled{
      list-style: inside;
      font-size: 1rem;
-    //  font-family:  MT Script Capitals;
+     font-family:  MT Script Capitals;
   }

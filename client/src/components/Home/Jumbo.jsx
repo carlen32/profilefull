@@ -6,7 +6,7 @@ const Jumbo = (props) => {
       <div className=" row d-flex justify-content-center">
         <div className="jumbotron jumbotron-fluid col-md-6 bg-white m-0 ">
           <div className=" text-center">
-            <h1 className="display-7 text-primary"> @Diva Stacy </h1>
+            <h1 className="display-7 text-primary"> @Legs For Days </h1>
             <p className="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ad
               eligendi distinctio pariatur rem sed, molestias doloremque amet
@@ -40,35 +40,32 @@ const Jumbo = (props) => {
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
               <img
-                src="./img/pic1.jpg"
+                src="./img/gym1.jpg"
                 className="img-fluid"
                 alt="First slide"
               />
               <div className="carousel-caption d-md-block">
-                <h3>Title</h3>
-                <p>Description</p>
+                <h3>Connect</h3>
               </div>
             </div>
             <div className="carousel-item">
               <img
-                src="./img/pic2.jpg"
+                src="./img/gym2.jpg"
                 className="img-fluid"
-                alt="Second slide"
+                alt="14926108 © Yanlev | Dreamstime.com"
               />
               <div className="carousel-caption  d-md-block">
-                <h3>Title</h3>
-                <p>Description</p>
+                <h3>Challenge</h3>
               </div>
             </div>
-            <div className="carousel-item ">
+            <div className="carousel-item">
               <img
-                src="./img/pic4.jpg"
+                src="./img/gym3.jpg"
                 className="img-fluid"
-                alt="Third slide"
+                alt="Third slide 19716357 © Lanak | Dreamstime.com"
               />
               <div className="carousel-caption d-md-block">
-                <h3>Title</h3>
-                <p>Description</p>
+                <h3>Inspire</h3>
               </div>
             </div>
           </div>
@@ -140,8 +137,8 @@ const Jumbo = (props) => {
             </p>
           </div>
           <div className='col-12 d-flex justify-content-center align-items-center'>
-            <i className="fas fa-copyright fa-2x "></i>
-            <h6> 2022 Second Chance</h6>
+            <i className="fas fa-copyright fa-2x"></i>
+            <h6 className="m-1"> 2022 David Carlen</h6>
           </div>
         </div>
       </div>

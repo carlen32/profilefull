@@ -73,8 +73,8 @@ const Register = props => {
 
   return (
     <Fragment>
-      <button className="btn btn-primary btn-md" href="" onClick={openModal}>
-        Become A Fan
+      <button className="btn btn-primary btn-md text-light" href="" onClick={openModal}>
+        Become A Trainer
       </button>
 
       <MainModal ref={modalRef}>
