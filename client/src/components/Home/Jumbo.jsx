@@ -1,4 +1,6 @@
 import Register from "../Auth/register";
+import Swipe from "./Swiper/Swipe";
+import {posters} from "./Swiper/Data"
 
 const Jumbo = (props) => {
   return (
@@ -6,24 +8,98 @@ const Jumbo = (props) => {
       <div className=" row d-flex justify-content-center">
         <div className="jumbotron jumbotron-fluid col-md-6 bg-white m-0 ">
           <div className=" text-center">
-            <h1 className="display-7 text-primary"> @Legs For Days </h1>
+            <h1 className="display-7 text-primary">
+              On Boarding @Fit Society{" "}
+            </h1>
             <p className="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ad
-              eligendi distinctio pariatur rem sed, molestias doloremque amet
-              quaerat accusamus veritatis eos autem cupiditate possimus illo.
-              Modi tempore amet consequuntur!
+              Fit Society exists to connect, challenge and inspire to be better
+              together.
             </p>
             <hr className="my-1" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
-              quaerat saepe iure, inventore reiciendis itaque.
+              The on boarding process is a four week process where you learn
+              exactly what fit society is all about. You will learn the system,
+              class protocols, and scenarios you need to expect. You will connect, challenge and inspire members 
             </p>
+            <p>
+              They say, “If you want to go fast, go alone. If you want to go
+              far, go together.” The strength of our community is not found in
+              how much we can lift, but rather the relationships we build around
+              our common purpose.
+            </p>
+            {
+       posters ? posters.map((p, i) => {
+          return(
+         <div className="div">
+          <img className="col-6 d-flex row img-fluid" src={p.image}/>
+         </div>
+          )
+        }):''
+      }
             <p className="lead">
-             <Register {...props}/>
+              <Register {...props} />
             </p>
           </div>
         </div>
-        <div
+        <Swipe />
+      
+        <div className=" col-md-12 col-sm-12  row ">
+          <h2 className=" d-flex justify-content-center align-items-center display-5 col-12 text-info">
+            About Fit Society 
+          </h2>
+          <h3 className="text-center">WE ARE ON A MISSION
+</h3><p className="text-center">Fit Society exists to connect, challenge, and inspire people to be better together.</p>
+          <div className="border-radius col-md-6 ">
+            <h4 className="text-md-center">WE LIVE BY A CODE</h4>
+            <h5 className="text-center text-info">
+            On the road to accomplishing our mission, we have a code.
+            </h5>
+            <p>
+            We work because we know that anything worth having is worth sweating for, and there are no free rides. You pay your way. 
+            </p>
+            <p className="">
+            We play because we don’t have to do this, we get to do this. We take fitness seriously but ourselves not too seriously. We make a ruckus. 
+            </p>
+            <p className="">
+            We achieve because our effort is aimed at a target. We set goals and we won’t stop until we reach them. 
+            </p>
+          </div>
+
+          <div className=" border-radius col-md-6 overflow-scroll-sm-none">
+            <h4 className="text-md-center">WE PURSUE OUR VALUES</h4>
+            <h5 className="text-center text-info">The way we chase our mission is shaped by our values.</h5>
+            {/* <p className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            </p> */}
+            {/* <ul className=" row d-flex justify-content-end align-items-center">
+              <li className="col-md-6">work out</li>
+              <li className="col-md-6">pole dancing</li>
+              <li className="col-md-6">walks on the beach</li>
+              <li className="col-md-6">storm archive series</li>
+            </ul> */}
+            <p>
+            We value community because we know we are stronger united than we are divided. We believe in “we” before “me”. When our needs come before my needs, everyone wins. 
+            </p>
+            <p>
+            We value fitness. We are elite athletes and active moms, we are rocket scientists, bricklayers, and everything in between. In those roles, we want to perform, so we get fit.
+            </p>
+            <p>We value excellence. We are constantly improving and we will not be satisfied with mediocre or average… the mission is far too important. </p>
+          </div>
+          <div className="col-12 d-flex justify-content-center align-items-center">
+            <i className="fas fa-copyright fa-2x"></i>
+            <h6 className="m-2"> 2022 David Carlen</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Jumbo;
+
+
+
+  // eslint-disable-next-line no-lone-blocks
+  {/* <div
           id="carouselId"
           className="carousel d-flex justify-content-center align-items-center slide col-md-6 col-sm-8  "
           data-ride="carousel"
@@ -87,62 +163,4 @@ const Jumbo = (props) => {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
-        </div>
-        <div className=" col-md-12 col-sm-12  row ">
-          <h2 className=" d-flex justify-content-center align-items-center display-5 col-12 text-info">About Me</h2>
-          <div className="border-radius col-md-6 ">
-            <h4 className="text-md-center">Get To Know Me</h4>
-            <p >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            </p>
-            <p >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              placeat veniam consectetur quas ea, pariatur aliquam magni est
-              molestias omnis quis animi! Recusandae iusto quos mollitia ipsa
-              esse odio vel.
-            </p>
-            <p className="text-info">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              placeat veniam consectetur quas ea, pariatur aliquam magni est
-              molestias omnis quis animi! Recusandae iusto quos mollitia ipsa
-              esse odio vel.
-            </p>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam debitis rerum assumenda consequuntur magni accusantium optio quae officia modi, ipsum, voluptatem dolore exercitationem vitae. Aut cum at possimus magni.
-            </p>
-          </div>
-
-          <div className=" border-radius col-md-6 overflow-scroll-sm-none">
-            <h4 className="text-md-center">Things To Know</h4>
-            <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            </p>
-            <ul className=' row d-flex justify-content-end align-items-center'>
-              <li className ='col-md-6'>work out</li>
-              <li className ='col-md-6'>pole dancing</li>
-              <li className ='col-md-6'>walks on the beach</li>
-              <li className ='col-md-6'>storm archive series</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              placeat veniam consectetur quas ea, pariatur aliquam magni est
-              molestias omnis quis animi! Recusandae iusto quos mollitia ipsa
-              esse odio vel.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
-              placeat veniam consectetur quas ea, pariatur aliquam magni est
-              molestias omnis quis animi! Recusandae iusto quos mollitia ipsa
-              esse odio vel.
-            </p>
-          </div>
-          <div className='col-12 d-flex justify-content-center align-items-center'>
-            <i className="fas fa-copyright fa-2x"></i>
-            <h6 className="m-1"> 2022 David Carlen</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-export default Jumbo;
+        </div> */}

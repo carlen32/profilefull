@@ -11188,6 +11188,51 @@ textarea.form-control-lg {
   color: white;
 }
 
+.container.testimonials__container {
+  width: 90%;
+  padding-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.client__avatar {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid rgb(227, 108, 9);
+}
+
+.testimonial {
+  background: black;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.client__review {
+  color: #f2f6fb;
+  font-weight: 300;
+  display: block;
+  width: 90%;
+  margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: #f2f6fb;
+}
+
+.swiper-pagination {
+  position: relative;
+  height: 150px;
+}
+
+.client__name {
+  color: #f2f6fb;
+}
+
 .border-radius {
   border-radius: 1%;
 }

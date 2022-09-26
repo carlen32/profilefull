@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from './Data';
+import {Data} from './Data';
 import { Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,9 +10,7 @@ import 'swiper/css/pagination';
 
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
-  <h5>Review from clients</h5>
-  <h2>Testimonials</h2>
+    <div id='testimonials' className='col-12 col-md-6'>
   <Swiper className="container testimonials__container"      
       modules={[Pagination]}
       spaceBetween={40}
@@ -23,16 +21,18 @@ const Testimonials = () => {
           return(
             <SwiperSlide className="testimonial" key={i}>
             <div className="client__avatar">
-              <img src={p.image} alt={p.name} />
+            <h5 className='text-center text-light'>{p.title}</h5>
+  <h2 className='text-center text-light'>{p.text}</h2>
+              <img className='img-fluid' src={p.image} alt={p.name} />
             </div>
             <h5 className="client__name">{p.name}</h5>
-            <small className="client__review">{p.review}</small>
+            <small className="client__review text">{p.review}</small>
             </SwiperSlide>
           )
-        }) :''
+        }):''
       }
   </Swiper>
-    </section>
+    </div>
   )
 }
 

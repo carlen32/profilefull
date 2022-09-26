@@ -1,24 +1,40 @@
-import avatar1 from "../../assets/img/avatar1.webp";
-import avatar2 from "../../assets/img/avatar2.webp";
-import avatar3 from "../../assets/img/avatar3.webp";
+import gym1 from "../../../assets/img/gym1.jpg";
+import gym2 from "../../../assets/img/gym2.jpg";
+import gym3 from "../../../assets/img/gym3.jpg";
+import values from "../../../assets/img/values.jpg";
+import code from "../../../assets/img/code.jpg";
 
-const Data = [
+
+export const Data = [
   {
-    image: avatar1,
-    name: "You In The Future",
-    review: "I am so fortunate to have hired David Carlen as a junior web developer. He is energetic, optimistic, and always willing to learn. One of the best hires I ever made!",
+    title: "Review From Member",
+    text: "Testimonials",
+    image: gym1,
+    name: "Amanda Stark",
+    review: "Fit Society Changed My Life.",
   },
   {
-    image: avatar2,
+    title: "Review From Member",
+    text: "Testimonials",
+    image: gym2,
     name: "Jessica Jax",
-    github: "https://github.com/carlen32",
-    review: "David Carlen is detail oriented, organized, and reliable",
+    review: "I have never felt better in my life then right now.",
   },
   {
-    image: avatar3,
-    name: "Mafia Man",
-    review: "David Carlen is a up and coming web developer and is always putting in the time to sharpen his skills",
-  },
+    title: "Review From Member",
+    text: "Testimonials",
+    image: gym3,
+    name: "John Snow",
+    review: "I feel like I am part of the family here, I couldn't ask for a better gym.",
+  }
 ];
 
-export default Data;
+export const posters = [ 
+  {
+ image: code
+},
+{
+  image: values
+}
+];
+
