@@ -1,6 +1,6 @@
 import Register from "../Auth/register";
 import Swipe from "./Swiper/Swipe";
-import {posters} from "./Swiper/Data"
+import { posters } from "./Swiper/Data";
 
 const Jumbo = (props) => {
   return (
@@ -15,11 +15,12 @@ const Jumbo = (props) => {
               Fit Society exists to connect, challenge and inspire to be better
               together.
             </p>
-            <hr className="my-1" />
+            <hr className="m-1" />
             <p>
               The on boarding process is a four week process where you learn
               exactly what fit society is all about. You will learn the system,
-              class protocols, and scenarios you need to expect. You will connect, challenge and inspire members 
+              class protocols, and scenarios you need to expect. You will
+              connect, challenge and inspire members
             </p>
             <p>
               They say, “If you want to go fast, go alone. If you want to go
@@ -27,47 +28,63 @@ const Jumbo = (props) => {
               how much we can lift, but rather the relationships we build around
               our common purpose.
             </p>
-            {
-       posters ? posters.map((p, i) => {
-          return(
-         <div className="div">
-          <img className="col-6 d-flex row img-fluid" src={p.image}/>
-         </div>
-          )
-        }):''
-      }
-            <p className="lead">
+            <div className="d-flex row">
+              {posters
+                ? posters.map((p, i) => {
+                    return (
+                      <>
+                        <img
+                          className="col-6 img-fluid "
+                          src={p.image}
+                          alt={p.alt}
+                        />
+                      </>
+                    );
+                  })
+                : ""}
+            </div>
+            <p className="lead mt-4">
               <Register {...props} />
             </p>
           </div>
         </div>
         <Swipe />
-      
+
         <div className=" col-md-12 col-sm-12  row ">
           <h2 className=" d-flex justify-content-center align-items-center display-5 col-12 text-info">
-            About Fit Society 
+            About Fit Society
           </h2>
-          <h3 className="text-center">WE ARE ON A MISSION
-</h3><p className="text-center">Fit Society exists to connect, challenge, and inspire people to be better together.</p>
+          <h3 className="text-center">WE ARE ON A MISSION</h3>
+          <hr className="m-1 " />
+          <p className="text-center">
+            Fit Society exists to connect, challenge, and inspire people to be
+            better together.
+          </p>
           <div className="border-radius col-md-6 ">
-            <h4 className="text-md-center">WE LIVE BY A CODE</h4>
+            <h4 className="text-center">WE LIVE BY A CODE</h4>
             <h5 className="text-center text-info">
-            On the road to accomplishing our mission, we have a code.
+              On the road to accomplishing our mission, we have a code.
             </h5>
             <p>
-            We work because we know that anything worth having is worth sweating for, and there are no free rides. You pay your way. 
+              We work because we know that anything worth having is worth
+              sweating for, and there are no free rides. You pay your way.
             </p>
             <p className="">
-            We play because we don’t have to do this, we get to do this. We take fitness seriously but ourselves not too seriously. We make a ruckus. 
+              We play because we don’t have to do this, we get to do this. We
+              take fitness seriously but ourselves not too seriously. We make a
+              ruckus.
             </p>
             <p className="">
-            We achieve because our effort is aimed at a target. We set goals and we won’t stop until we reach them. 
+              We achieve because our effort is aimed at a target. We set goals
+              and we won’t stop until we reach them.
             </p>
           </div>
 
           <div className=" border-radius col-md-6 overflow-scroll-sm-none">
-            <h4 className="text-md-center">WE PURSUE OUR VALUES</h4>
-            <h5 className="text-center text-info">The way we chase our mission is shaped by our values.</h5>
+            <h4 className="text-center">WE PURSUE OUR VALUES</h4>
+            <h5 className="text-center text-info">
+              The way we chase our mission is shaped by our values.
+            </h5>
             {/* <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             </p> */}
@@ -78,12 +95,20 @@ const Jumbo = (props) => {
               <li className="col-md-6">storm archive series</li>
             </ul> */}
             <p>
-            We value community because we know we are stronger united than we are divided. We believe in “we” before “me”. When our needs come before my needs, everyone wins. 
+              We value community because we know we are stronger united than we
+              are divided. We believe in “we” before “me”. When our needs come
+              before my needs, everyone wins.
             </p>
             <p>
-            We value fitness. We are elite athletes and active moms, we are rocket scientists, bricklayers, and everything in between. In those roles, we want to perform, so we get fit.
+              We value fitness. We are elite athletes and active moms, we are
+              rocket scientists, bricklayers, and everything in between. In
+              those roles, we want to perform, so we get fit.
             </p>
-            <p>We value excellence. We are constantly improving and we will not be satisfied with mediocre or average… the mission is far too important. </p>
+            <p>
+              We value excellence. We are constantly improving and we will not
+              be satisfied with mediocre or average… the mission is far too
+              important.{" "}
+            </p>
           </div>
           <div className="col-12 d-flex justify-content-center align-items-center">
             <i className="fas fa-copyright fa-2x"></i>
@@ -96,10 +121,9 @@ const Jumbo = (props) => {
 };
 export default Jumbo;
 
-
-
-  // eslint-disable-next-line no-lone-blocks
-  {/* <div
+// eslint-disable-next-line no-lone-blocks
+{
+  /* <div
           id="carouselId"
           className="carousel d-flex justify-content-center align-items-center slide col-md-6 col-sm-8  "
           data-ride="carousel"
@@ -163,4 +187,5 @@ export default Jumbo;
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="sr-only">Next</span>
           </a>
-        </div> */}
+        </div> */
+}

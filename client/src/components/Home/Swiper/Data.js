@@ -31,10 +31,12 @@ export const Data = [
 
 export const posters = [ 
   {
- image: code
+ image: code,
+ alt: 'code'
 },
 {
-  image: values
+ image: values,
+  alt: 'values'
 }
 ];
 
