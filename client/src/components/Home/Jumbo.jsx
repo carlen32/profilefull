@@ -78,6 +78,16 @@ const Jumbo = (props) => {
               We achieve because our effort is aimed at a target. We set goals
               and we won’t stop until we reach them.
             </p>
+            <h4 className="text-center">
+              GROUP TRAINING IS OUR BREAD AND BUTTER.
+            </h4>
+
+            <p>
+              Day in and day out, the core of what we do is this: get a group of
+              people in a room, work hard, have a blast, and leave sweating and
+              smiling. It’s our homebase and our heartbeat, it’s what we love,
+              and it’s the primary vehicle to drive our mission forward.
+            </p>
           </div>
 
           <div className=" border-radius col-md-6 overflow-scroll-sm-none">
