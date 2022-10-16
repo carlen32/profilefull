@@ -64,13 +64,13 @@ const BuyImg = picture => {
   return (
     <Fragment>
       <button className="btn btn-primary col-3 text-white" onClick={openModal}>
-        Buy Photo
+        work out
       </button>
     
 
       <MainModal ref={modalRef}>
         <form onSubmit={onSubmit} className=" row container bg-white ">
-          <h4 className="display-4 col-12">Buy {Photo.name}</h4>
+          <h4 className="display-4 col-12"> {Photo.name}</h4>
           <div className="d-flex col-12 justify-content-end">
             <h4>${Photo.price}</h4>
           </div>

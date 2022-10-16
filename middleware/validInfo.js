@@ -1,5 +1,5 @@
 module.exports = (req, res, next) => {
-    const {email, name, password, phoneNumber, cardNumber, cardType, expiration, confirmPassword } = req.body;
+    const {email, name, password, phoneNumber, confirmPassword } = req.body;
 //   console.log(req.body)
 
     const validEmail = (userEmail) => {
@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
  
 
     if (req.path === '/register') {
-        if (![email, name, password, phoneNumber, cardNumber, cardType, expiration, confirmPassword].every(Boolean)) {
+        if (![email, name, password, phoneNumber,confirmPassword].every(Boolean)) {
      
             return res.json({msg:'Missing Credentials', status: 401, id: 'Verify_Failed'});
         } else if (!validEmail(email)) {

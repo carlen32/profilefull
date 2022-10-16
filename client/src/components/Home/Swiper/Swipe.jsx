@@ -1,5 +1,4 @@
 import React from 'react';
-import {Data} from './Data';
 import { Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,16 +7,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const Testimonials = () => {
+const Swipe = (props) => {
+//  console.log(props.Data)
+ const data = props.Data;
   return (
     <div id='testimonials' className='col-12 col-md-6'>
   <Swiper className="container testimonials__container"      
       modules={[Pagination]}
       spaceBetween={40}
       slidesPerView={1}
+      data={data}
       pagination={{ clickable: true }}>
   {
-       Data ? Data.map((p, i) => {
+       data ? data.map((p, i) => {
           return(
             <SwiperSlide className="testimonial" key={i}>
             <div className="client__avatar">
@@ -36,6 +38,6 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default Swipe
 
 

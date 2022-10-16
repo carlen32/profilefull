@@ -6,15 +6,13 @@ const User = require("../models/UserSchema");
 
 module.exports = {
   register: async function (req, res) {
-    const { name,
+    const {name,
       lastName,
       password,
       confirmPassword,
-      cardType,
-      cardNumber,
       phoneNumber,
-      expiration,
-      email } = req.body;
+      email
+     } = req.body;
       
     // console.log(req.body)
 
@@ -37,10 +35,7 @@ module.exports = {
             name,
             lastName,
             password: bcryptPassword,
-            cardType,
-            cardNumber,
             phoneNumber,
-            expiration,
             email
           });
 

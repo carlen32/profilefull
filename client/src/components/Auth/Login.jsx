@@ -64,9 +64,9 @@ const Login = props => {
       </button>
 
       <MainModal ref={modalRef}>
-        <form onSubmit={onSubmit} className=" row container bg-white ">
-          <h4 className="col-12 text-center display-4 text-primary">Login</h4>
-          <div className="form-group input-group-md col-12 ">
+        <form onSubmit={onSubmit} className="login-form row container">
+          <h4 className="col-12 text-center display-4 text-light">Login</h4>
+          <div className="form-group input-group-md col-12 text-light">
             <label>First Name</label>
             <input
               type="text"
@@ -77,7 +77,7 @@ const Login = props => {
               required
             />
           </div>
-          <div className="form-group input-group-md col-12">
+          <div className="form-group input-group-md text-light col-12">
             <label>Last Name</label>
             <input
               type="text"
@@ -88,7 +88,7 @@ const Login = props => {
               onChange={onChange}
             />
           </div>
-          <div className="form-group input-group-md col-12 ">
+          <div className="form-group input-group-md col-12 text-light ">
             <label>Email</label>
             <input
               type="text"
@@ -100,7 +100,7 @@ const Login = props => {
               placeholder="davidranger84@gmail.com"
             />
           </div>
-          <div className="form-group input-group-md col-12 ">
+          <div className="form-group input-group-md col-12 text-light ">
             <label>Password</label>
             <input
               type="password"
@@ -113,7 +113,7 @@ const Login = props => {
           </div>
           {errMessage}
           <div className="col-12 d-flex align-items-center justify-content-md-end justify-content-start">
-            <button type="submit" className="btn btn-primary m-1 btn-md">
+            <button type="submit" className="btn btn-light m-1 btn-md">
               Login
             </button>
             <button

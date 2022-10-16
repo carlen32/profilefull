@@ -24,6 +24,7 @@ const baseUrl = "http://localhost:4000";
       return axios.post(baseUrl + '/user/register', body)
     },
     loginUser: async function (body){
+      console.log('login')
       return axios.post(baseUrl + '/user/login', body)
     },
     buyImage: async function (body, dispatch, getState){

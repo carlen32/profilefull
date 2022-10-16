@@ -33,7 +33,7 @@ const Hero = () => {
     <Fragment>
       <div className="container-fluid">
         <div className="hero d-flex justify-content-center align-items-center">
-            <h2 className='display-4 text-dark text-shadow'>Hi {name} {lastName}</h2>
+            <h1 className='text-primary text-shadow'>Hi {name} {lastName}</h1>
         </div>
         {/* <!-- Nav tabs --> */}
         <ul className="nav nav-tabs d-flex justify-content-around" id="navId">
@@ -45,7 +45,7 @@ const Hero = () => {
               id="infoTab"
               className="nav-link"
             >
-              Info
+              Expectations
             </a>
           </li>
           <li className="nav-item dropdown">
@@ -65,7 +65,7 @@ const Hero = () => {
                 onClick={openType}
                 href="#!"
               >
-                Action
+                Assessment 
               </a>
               <a
                 name="myPicturesPane"
@@ -74,7 +74,7 @@ const Hero = () => {
                 onClick={openType}
                 href="#!"
               >
-                My Pictures
+                TI
               </a>
               <div className="dropdown-divider"></div>
               <a
@@ -84,7 +84,7 @@ const Hero = () => {
                 onClick={openType}
                 href="#!"
               >
-                Direct Message
+                VOPA
               </a>
             </div>
           </li>
@@ -96,7 +96,7 @@ const Hero = () => {
               className="nav-link"
               onClick={openType}
             >
-              Images
+              Foundational Movements
             </a>
           </li>
           <li className="nav-item">
@@ -107,7 +107,7 @@ const Hero = () => {
               className='nav-link'
               onClick={openType}
             >
-          Videos 
+          Video Library
             </a>
           </li>
         </ul>

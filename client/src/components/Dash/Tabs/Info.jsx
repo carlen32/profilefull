@@ -1,15 +1,18 @@
 import React from "react";
-
+import Swipe from "../../Home/Swiper/Swipe";
+import { Coaches } from "../../Home/Swiper/Data";
 const Info = ()=> {
+  console.log(Swipe)
   return (
     <div className="tab-pane active show fade " id="infoPane">
       <div className="row">
-        <div className="col-md-6">
-          <img src="./img/info.jpg" className="img-fluid" alt="info on user img" />
-        </div>
+      
+          <Swipe Data={Coaches} />
+          {/* <img src="./img/info.jpg" className="img-fluid" alt="info on user img" /> */}
+        
         <div className="col-md-6 row">
           <div className="col-12">
-            <h4 className=" text-info text-center">Attributes</h4>
+            <h4 className=" text-info text-center">N/A</h4>
             <p className="text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               molestias dignissimos aut, obcaecati vero animi, quasi porro est
@@ -17,7 +20,7 @@ const Info = ()=> {
               Laboriosam ea alias sint. Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Pariatur molestias dignissimos aut.
             </p>
-            <h5 className="text-info">Things To Know</h5>
+            {/* <h5 className="text-info">Things To Know</h5>
             <ul className="row list-styled">
               <li className="col-6">Height 5'7</li>
               <li className="col-6">Weight 120</li>
@@ -26,11 +29,11 @@ const Info = ()=> {
               <li className="col-6">Naval 20</li>
               <li className="col-6">Shoe 6</li>
               <li className="col-6">Hair-Color whatever im feeling </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="col-12">
-          <h4 className=" text-info text-center">Get To Know Me</h4>
+          <h4 className=" text-info text-center">Get To Know The Coaches</h4>
           <div className="card-columns row">
             <div className="card col-md-4">
               <img className="card-img-top" src="./img/img19.jpg" alt="" />

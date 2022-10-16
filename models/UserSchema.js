@@ -24,21 +24,6 @@ let UserSchema = new Schema({
         required: true,
         trim: true
     },
-    cardType: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    expiration: {
-        type: String,
-        required: true,
-        trim: true
-    },
-    cardNumber: {
-        type: String,
-        required: true,
-        trim: true
-    },
     email: {
         type: String,
         required: true,

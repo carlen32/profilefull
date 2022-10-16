@@ -1,6 +1,7 @@
 import Register from "../Auth/register";
 import Swipe from "./Swiper/Swipe";
 import { posters } from "./Swiper/Data";
+import {Data} from '../Home/Swiper/Data';
 
 const Jumbo = (props) => {
   return (
@@ -11,6 +12,7 @@ const Jumbo = (props) => {
             <h1 className="display-7 text-primary">
               On Boarding @Fit Society{" "}
             </h1>
+            <h3>Your Invited</h3>
             <p className="lead">
               Fit Society exists to connect, challenge and inspire to be better
               together.
@@ -32,13 +34,14 @@ const Jumbo = (props) => {
               {posters
                 ? posters.map((p, i) => {
                     return (
-                      <>
-                        <img
+                      
+                        <img 
                           className="col-6 img-fluid "
                           src={p.image}
                           alt={p.alt}
+                          key={i}
                         />
-                      </>
+                      
                     );
                   })
                 : ""}
@@ -48,9 +51,9 @@ const Jumbo = (props) => {
             </p>
           </div>
         </div>
-        <Swipe />
+        <Swipe Data={Data} />
 
-        <div className=" col-md-12 col-sm-12  row ">
+        <div className=" col-md-12 col-sm-12 row">
           <h2 className=" d-flex justify-content-center align-items-center display-5 col-12 text-info">
             About Fit Society
           </h2>
@@ -78,16 +81,6 @@ const Jumbo = (props) => {
               We achieve because our effort is aimed at a target. We set goals
               and we won’t stop until we reach them.
             </p>
-            <h4 className="text-center">
-              GROUP TRAINING IS OUR BREAD AND BUTTER.
-            </h4>
-
-            <p>
-              Day in and day out, the core of what we do is this: get a group of
-              people in a room, work hard, have a blast, and leave sweating and
-              smiling. It’s our homebase and our heartbeat, it’s what we love,
-              and it’s the primary vehicle to drive our mission forward.
-            </p>
           </div>
 
           <div className=" border-radius col-md-6 overflow-scroll-sm-none">
@@ -95,15 +88,7 @@ const Jumbo = (props) => {
             <h5 className="text-center text-info">
               The way we chase our mission is shaped by our values.
             </h5>
-            {/* <p className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            </p> */}
-            {/* <ul className=" row d-flex justify-content-end align-items-center">
-              <li className="col-md-6">work out</li>
-              <li className="col-md-6">pole dancing</li>
-              <li className="col-md-6">walks on the beach</li>
-              <li className="col-md-6">storm archive series</li>
-            </ul> */}
+           
             <p>
               We value community because we know we are stronger united than we
               are divided. We believe in “we” before “me”. When our needs come
@@ -120,12 +105,56 @@ const Jumbo = (props) => {
               important.{" "}
             </p>
           </div>
-          <div className="col-12 d-flex justify-content-center align-items-center">
+
+          
+          
+          {/* <div className="col-12 d-flex justify-content-center align-items-center">
             <i className="fas fa-copyright fa-2x"></i>
             <h6 className="m-2"> 2022 David Carlen</h6>
-          </div>
+          </div> */}
         </div>
       </div>
+      <div className=" col-md-12 col-sm-12 row">
+          <h2 className=" d-flex justify-content-center align-items-center display-5 col-12 text-info">
+            What Fit Society Does
+          </h2>
+          <h3 className="text-center">GROUP TRAINING IS OUR BREAD AND BUTTER. </h3>
+          <p className="text-center">Performance workouts are programmed with the intermediate to advanced exerciser in mind. These workouts often present a strength bias combined with a focus on higher skill and complex movements. Additionally, you will see conditioning pieces that are scored for time and reps combined with functional body building.</p>
+          <hr className="m-1 " />
+          <p className="text-center">
+          All of our  classes are split into two tracks to accommodate all fitness levels. 
+          </p>
+          <div className="border-radius col-md-6 ">
+            <h4 className="text-center text-info">FITNESS</h4>
+            {/* <h5 className="text-center text-info">
+              On the road to accomplishing our mission, we have a code.
+            </h5> */}
+            <p>
+            Fitness workouts are programmed for the beginner and intermediate exerciser in mind and consist of high intensity functional training combining weights and cardio. In a Fitness workout you will see longer in duration, station, and circuit based workouts programmed.
+            </p>
+            <p>
+              Day in and day out, the core of what we do is this: get a group of
+              people in a room, work hard, have a blast, and leave sweating and
+              smiling. It’s our homebase and our heartbeat, it’s what we love,
+              and it’s the primary vehicle to drive our mission forward.
+            </p>
+          </div>
+
+          <div className=" border-radius col-md-6 overflow-scroll-sm-none">
+            <h4 className="text-center text-info">PERFORMANCE</h4>
+            <p>
+            Performance workouts are programmed with the intermediate to advanced exerciser in mind. These workouts often present a strength bias combined with a focus on higher skill and complex movements. Additionally, you will see conditioning pieces that are scored for time and reps combined with functional body building.
+            </p>
+          </div>
+
+          
+          
+          {/* <div className="col-12 d-flex justify-content-center align-items-center">
+            <i className="fas fa-copyright fa-2x"></i>
+            <h6 className="m-2"> 2022 David Carlen</h6>
+          </div> */}
+        </div>
+      
     </div>
   );
 };
@@ -198,4 +227,6 @@ export default Jumbo;
             <span className="sr-only">Next</span>
           </a>
         </div> */
+
+
 }

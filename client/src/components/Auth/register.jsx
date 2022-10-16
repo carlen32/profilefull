@@ -5,6 +5,7 @@ import { register } from "../../redux/actions/auth/authActions";
 import { clearErrors } from "../../redux/actions/handleErr";
 
 const Register = props => {
+  console.log(props)
   const modalRef = useRef();
   const dispatch = useDispatch();
   const errMessage =
@@ -18,12 +19,10 @@ const Register = props => {
     email: "",
     password: "",
     confirmPassword: "",
-    cardType: "",
     phoneNumber: "",
     name: "",
     lastName: "",
-    expiration: "",
-    cardNumber: ""
+   
   });
 
   const {
@@ -31,11 +30,9 @@ const Register = props => {
     password,
     name,
     confirmPassword,
-    cardType,
     phoneNumber,
     lastName,
-    expiration,
-    cardNumber
+    
   } = inputs;
 
   const onChange = e => {
@@ -58,11 +55,8 @@ const Register = props => {
       password,
       name,
       confirmPassword,
-      cardType,
       phoneNumber,
-      lastName,
-      expiration,
-      cardNumber
+      lastName
     };
     try {
       await dispatch(register(body));
@@ -78,9 +72,9 @@ const Register = props => {
       </button>
 
       <MainModal ref={modalRef}>
-        <form onSubmit={onSubmit} className=" row container bg-white ">
-          <h4 className="col-12 text-center display-4 text-primary">Become A Fan</h4>
-          <div className="form-group input-group-sm col-md-6 ">
+        <form onSubmit={onSubmit} className=" row container">
+          <h4 className="col-12 text-center display-4 text-light">Become A Trainer</h4>
+          <div className="form-group input-group-sm col-md-6 text-light">
             <label>First Name</label>
             <input
               type="text"
@@ -91,7 +85,7 @@ const Register = props => {
               required
             />
           </div>
-          <div className="form-group input-group-sm col-md-6 ">
+          <div className="form-group input-group-sm col-md-6 text-light ">
             <label>Last Name</label>
             <input
               type="text"
@@ -102,7 +96,7 @@ const Register = props => {
               onChange={onChange}
             />
           </div>
-          <div className="form-group input-group-sm col-md-6 ">
+          <div className="form-group input-group-sm col-md-6 text-light ">
             <label>Email</label>
             <input
               type="text"
@@ -114,7 +108,7 @@ const Register = props => {
               placeholder="davidranger84@gmail.com"
             />
           </div>
-          <div className="form-group input-group-sm col-md-6 ">
+          <div className="form-group input-group-sm col-md-6 text-light">
             <label>Password</label>
             <input
               type="password"
@@ -125,7 +119,7 @@ const Register = props => {
               onChange={onChange}
             />
           </div>
-          <div className="form-group input-group-sm col-md-6 ">
+          <div className="form-group input-group-sm col-md-6 text-light">
             <label>Confirm Password</label>
             <input
               type="password"
@@ -136,7 +130,7 @@ const Register = props => {
               onChange={onChange}
             />
           </div>
-          <div className=" form-group input-group-sm col-md-6">
+          <div className=" form-group input-group-sm col-md-6 text-light">
             <label>Phone Number</label>
             <input
               type="phone-number"
@@ -149,7 +143,7 @@ const Register = props => {
             />
           </div>
 
-          <div className=" form-group input-group-sm col-md-6">
+          {/* <div className=" form-group input-group-sm col-md-6">
             <label>Card Number</label>
             <input
               type="text"
@@ -188,10 +182,10 @@ const Register = props => {
                 <option>Captial One </option>
               </select>
             </div>
-          </div>
+          </div> */}
           {errMessage}
-          <div className="col-12 d-flex align-items-center justify-content-md-end justify-content-start"> <button type="submit" className="btn btn-primary m-1 btn-md">
-              Become A Fan
+          <div className="col-12 d-flex align-items-center justify-content-md-end justify-content-start"> <button type="submit" className="btn btn-light m-1 btn-md">
+              Jump On Board
             </button>
             <button
               onClick={closeModal}
